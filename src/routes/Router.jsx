@@ -1,12 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 
-export const Routing = createBrowserRouter([
+import Error from "../pages/error/Error";
+import Home from "../pages/home/Home";
+
+const Routing = createBrowserRouter([
   {
     path: "/",
-    element: "",
+    element: <Home />,
   },
   {
     path: "*",
-    element: "",
+    element: <Error />,
   },
 ]);
+
+export default Routing;
