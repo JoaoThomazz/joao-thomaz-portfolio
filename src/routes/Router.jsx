@@ -1,6 +1,5 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import Error from "../pages/error/Error";
 import Home from "../pages/home/Home";
 
 const Routing = createBrowserRouter([
@@ -10,7 +9,7 @@ const Routing = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Error />,
+    element: <Navigate to="/" replace />,
   },
 ]);
 
