@@ -2,7 +2,7 @@ export const Theming = {
   colors: {
     white: "#fff",
     black: "#000",
-    lightBlack: "#0000009b",
+    lightBlack: "#0000007f",
     lightherBlack: "#00000033",
   },
   fontSizes: {

@@ -1,5 +1,9 @@
 import React from "react";
-
+import Main from "../../layouts/main/Main";
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Main>aas</Main>
+    </div>
+  );
 }

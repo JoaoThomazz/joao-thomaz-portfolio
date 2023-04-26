@@ -17,7 +17,7 @@ export const ButtonMain = styled.a`
   cursor: pointer;
   background-color: ${(props) =>
     props.secondary ? props.theme.colors.white : props.theme.colors.black};
-  padding: 20px 30px;
+  padding: 15px 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
