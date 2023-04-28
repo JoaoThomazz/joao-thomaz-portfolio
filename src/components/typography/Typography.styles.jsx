@@ -13,7 +13,20 @@ const handleColorType = (color) => {
   }
 };
 
+const handleSizeType = (size) => {
+  switch (size) {
+    case "smaller":
+      return (props) => props.theme.fontSizes.smaller;
+    case "small":
+      return (props) => props.theme.fontSizes.small;
+    case "medium":
+      return (props) => props.theme.fontSizes.medium;
+    case "large":
+      return (props) => props.theme.fontSizes.large;
+  }
+};
+
 export const TypographyMain = styled.p`
   color: ${({ color }) => handleColorType(color)};
-  font-size: ${(props) => props.theme.fontSizes.small};
+  font-size: ${({ size }) => handleSizeType(size)};
 `;
