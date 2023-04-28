@@ -43,6 +43,9 @@ export const NavbarList = styled.ul`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: ${(props) => props.theme.breakpoints.large}) {
+    display: none;
+  }
 `;
 
 export const NavbarItem = styled.li`
